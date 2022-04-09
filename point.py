@@ -1,5 +1,5 @@
 class Point:
-    def __init__(self, x, y, z):
+    def __init__(self, x, y, z, k):
         if not isinstance(x, int):
             raise TypeError
         if not isinstance(y, int):
@@ -12,6 +12,7 @@ class Point:
         self.x = x
         self.y = y
         self.z = z
+        self.k = k
 
     def get_distance(self, origin=None):
         if origin is not None:
