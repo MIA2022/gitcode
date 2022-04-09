@@ -13,8 +13,8 @@ class Point:
         self.y = y
         self.z = z
 
-    def get_distance(self, origin=None, point2=None):
-        if point2 is not None:
+    def get_distance(self, origin=None):
+        if origin is not None:
             distance_square = (point2.x - self.x) * (point2.x - self.x) + \
                               (point2.y - self.y) * (point2.y - self.y) + \
                               (point2.z - self.z) * (point2.z - self.z)
